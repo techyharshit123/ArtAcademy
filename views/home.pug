@@ -1,0 +1,53 @@
+extends base.pug
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    section#Home  
+        h1 Welcome to World's largest #[span.brand Art Academy]
+        div.small Every artist was first an amateur -#[span.author Ralph Waldo Emerson]
+
+    section#Services
+        h2 Our Services
+        div.container
+            div.card
+                h3 Calligraphy
+                div.card-box
+                    div.card-img
+                        img(src="/static/calligraphy.jpg")
+                    div.card-content
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quidem consectetur libero, pariatur soluta, commodi ab nulla asperiores porro et, distinctio ipsam cumque?
+            div.card
+                h3 Sketching
+                div.card-box
+                    div.card-img
+                        img(src="/static/sketching.jpg")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fuga repellat soluta doloremque mollitia, explicabo incidunt ea perspiciatis nobis enim earum porro magnam.
+            div.card
+                h3 Designing
+                div.card-box
+                    div.card-img
+                        img(src="/static/designing.jpg")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam reiciendis sunt aliquid aperiam saepe eaque quidem reprehenderit, similique unde sint placeat quo? Illo?
+
+    section#Sponsors
+        h2 Our Sponsors
+        div.container
+            .logoSponsor #[img(src='/static/img/logo1.png')]
+            .logoSponsor #[img(src='/static/img/logo2.png')]
+            .logoSponsor #[img(src='/static/img/logo3.png')]
+            .logoSponsor #[img(src='../static/img/logo4.png')]
+    
+    section#Contact
+        h2 Contact
+        .container
+            .message If you are with any query can contact us on
+            .social_icons
+                ul
+                    li #[a(href="#") Instagram]
+                    li #[a(href="#") Facebook]
+                    li #[a(href="#") Twitter]

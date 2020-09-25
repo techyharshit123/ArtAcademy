@@ -1,0 +1,22 @@
+extends base.pug
+
+block style
+    style
+      include ../static/style.css
+      include ../static/contact.css
+
+block content  
+    section#Join    
+        h2 Join Us
+        form(action="/join" method="post" class="myForm")
+            //- label(for="name") Name
+            input(type="text" class="myInput" name="name" placeholder="Enter your name")
+            input(type="email" class="myInput" name="email" placeholder="Enter your email")
+            input(type="number" class="myInput" name="phone" placeholder="Enter your phone")
+            input(type="text" class="myInput" name="address" placeholder="Enter your address")
+            //- .gender
+            //-     <input type="radio" name="gender" value="male"> Male
+            //-     <input type="radio" name="gender" value="female"> Female
+            //-     <input type="radio" name="gender" value="other"> Other
+            button.btn
+                | Submit
