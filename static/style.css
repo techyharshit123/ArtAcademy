@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* body{
+    height: 1000px;
+} */
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    background-color: rgb(39, 36, 36);
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid rgb(27, 226, 193);
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    align-items: center;
+}
+.logo{
+    margin-right: 10rem;
+}
+.logo img{
+    height: 76px;
+    filter: invert(1);
+}
+#navbar li{
+    list-style: none;
+    
+}
+#navbar li a::after{
+    content: ""; 
+    width: 0px; 
+    height: 5px; 
+    background: tomato; 
+    position: absolute; 
+    /* left: 50%;
+    bottom: 0; */
+    /* transform: translateX(-50%); */
+    transform-origin: 0% 0%;
+    top: 80%; 
+    left: 0; 
+    transition: all .25s; 
+}
+#navbar li:last-child a::after{
+    content: ""; 
+    width: 0px; 
+    height: 5px; 
+    background: transparent; 
+    position: absolute; 
+    /* left: 50%;
+    bottom: 0; */
+    /* transform: translateX(-50%); */
+    transform-origin: 0% 0%;
+    top: 80%; 
+    left: 0; 
+    transition: all .25s; 
+}
+#navbar li a:hover::after{
+    width: 100%;
+    /* transform: translateX(50%); */
+    /* transform: translateX(100%);  */
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    padding: 20px 29px;
+    position: relative;
+}
+#navbar li:last-child{
+    position: absolute;
+    right: 16px;
+    border: 1px solid red;
+    padding: 10px 0px;
+    border-radius: 13px;
+    transition: all 0.5s;
+}
+#navbar li:last-child:hover{
+    background-color: red;
+    color: white;
+}
+
+#Home{
+    height: 640px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../static/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Home h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+#Home h1 span{
+    color: seagreen;
+}
+#Home div.small{
+    font-size: 30px;
+    color: skyblue;
+    font-style: italic;
+}
+#Home div.small span.author{
+    font-style: normal;
+    color: rgb(252, 190, 56);
+}
+
+#Services{
+    height: 720px;; 
+    width: 100%;   
+    background:  url('/static/services.png'); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+h2{
+    font-size: 55px;
+    text-align: center;
+    padding: 43px 0px 0px 0px;
+    font-weight: bold;
+}
+#Services div.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 2px 22px;
+    margin: 23px 20px;
+}
+.card h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 12px;
+    font-size: 25px;
+}
+
+.card-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 250px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
+
+.card-img img{
+    height: 240px;
+    border-radius: 4px; 
+}
+
+.card-content{
+    padding: 0 10px;
+}
+
+.card-content p{
+    font-size: 19px;
+    padding: 25px;
+    text-align: justify;
+}
+
+#Sponsors{
+    width: 100%;
+}
+#Sponsors div.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logoSponsor{
+    padding: 20px 14px;
+    margin: 20px;
+}
+#Sponsors div.container img{
+    height: 90px;
+}
+#footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+#Contact{
+    width: 100%;
+    background-color: whitesmoke;
+
+}
+#Contact div.message{
+    /* background-color: red; */
+    font-size: 30px;
+    text-align: center;
+}
+.social_icons{
+    /* background-color: ye/llow; */
+    width: 40%;
+    margin: auto;
+}
+.social_icons ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 6px;
+    padding: 4px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
